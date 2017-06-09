@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    function IsPC() {
+      var userAgentInfo = navigator.userAgent;
+      var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+      var flag = true;
+      for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+      }
+      return flag;
+    }
+    if (!IsPC()) {
+      location.href = '/mobile.html';
+    }
+
+  </script>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>耐力赛HOH</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>HOH</title>
 
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
+    <script>
+      (function (doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            if (clientWidth >= 640) {
+              docEl.style.fontSize = '100px';
+            } else {
+              docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            }
+          };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);
+    </script>
   </head>
   <body>
     <div class="container">
-      <h1>耐力赛HOH</h1>
-      
       <div class="result">
-        <p>从现在开始直到明天中午12点，这个网站会不定时出现问题，持续一分钟后消失，选手需要在一分钟之内把答案发到公群，最先答对的积1分。截止到明天中午12点分数最高的获得HOH。</p>
-        <p>请注意，在问题该出现的时候，它不会自动出现，需要你刷新网页它才会出现。</p>
-        <p>为了减轻大家的负担，在凌晨3点到7点之间，问题出现的频率将大大下降。</p>
+        
       </div>
 
-
+      <div class="info"></div>
       <div class="question"></div>
     </div>
     

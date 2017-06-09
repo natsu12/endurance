@@ -15,4 +15,22 @@
 
 .result {
   margin-top: 20px;
+  height: 400px;
+  background: url('./empty.png') no-repeat center;
+  background-size: auto 100%;
+	display: none;
+}
+
+.info {
+  margin-top: 20px;
+  height: 400px;
+  background: url('./background.png') no-repeat center;
+  background-size: auto 100%;
+  padding: 74px 240px;
+	display: none;
+}
+
+.question {
+	text-align: center;
+	margin-top: 10px;
 }
