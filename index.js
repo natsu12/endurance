@@ -12,8 +12,8 @@ $(function () {
 
   $.ajax({
 
-    url: 'http://localhost:8888/api/v1/endurance',
-    // url: 'https://sabox-server.nie.netease.com/api/v1/endurance',
+    // url: 'http://localhost:8888/api/v1/endurance',
+    url: 'https://sabox-server.nie.netease.com/api/v1/endurance',
     type: 'GET',
     crossDomain: true,
     dataType: 'jsonp',
