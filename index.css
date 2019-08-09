@@ -16,7 +16,7 @@
 .result {
   margin-top: 20px;
   height: 400px;
-  background: url('./empty.jpg') no-repeat center;
+  /* background: url('./empty.jpg') no-repeat center; */
   background-size: auto 100%;
 	display: none;
 }
@@ -24,7 +24,7 @@
 .info {
   margin-top: 20px;
   height: 400px;
-  background: url('./background.jpg') no-repeat center;
+  /* background: url('./background.jpg') no-repeat center; */
   background-size: auto 100%;
   padding: 74px 250px 74px 234px;
 	display: none;

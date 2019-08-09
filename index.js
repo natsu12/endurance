@@ -12,8 +12,8 @@ $(function () {
 
   $.ajax({
 
-    // url: 'http://localhost:8888/api/v1/endurance',
-    url: 'https://sabox-server.nie.netease.com/api/v1/endurance',
+    url: 'http://localhost:8889/api/v1/endurance',
+    // url: 'https://sabox-server.nie.netease.com/api/v1/endurance',
     type: 'GET',
     crossDomain: true,
     dataType: 'jsonp',
@@ -23,7 +23,7 @@ $(function () {
         $('.info').css('display', 'block');
 
       } else {
-        $('.question').html('电视机上啥都没有哦');
+        $('.question').html('啥都没有哦');
         $('.result').css('display', 'block');
       }
     },

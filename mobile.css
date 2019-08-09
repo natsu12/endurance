@@ -16,7 +16,7 @@
 .result {
   margin-top: 20px;
   height: 170px;
-  background: url('./empty-mobile.jpg') no-repeat center;
+  /* background: url('./empty-mobile.jpg') no-repeat center; */
   background-size: auto 100%;
 	display: none;
 }
@@ -24,7 +24,7 @@
 .info {
   margin-top: 20px;
   height: 170px;
-  background: url('./background-mobile.png') no-repeat center;
+  /* background: url('./background-mobile.png') no-repeat center; */
   background-size: auto 100%;
 	padding: 10px 20px;
 	display: none;
